@@ -1,0 +1,25 @@
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# Office temporary files
+~$*.xls*
+~$*.doc*
+~$*.ppt*
+
+# Excel backup / autosave
+*.xlk
+*.bak
+*.tmp
+
+# macOS system files
+.DS_Store
+
+# VS Code / IDE
+.vscode/
+*.code-workspace
+
+# Archives
+*.zip
+*.rar
+*.7z
