@@ -21,18 +21,22 @@ padding-bottom: 0; /* nav has its own padding */
 box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* subtle depth when stuck */
 }
 
+/* Logo image */
 header img {
 display: block;
-margin: 0 auto;
-max-height: 120px;
+margin: 0 auto 10px auto;
+max-height: 120px; /* desktop logo height */
+width: auto; /* keep proportions */
+height: auto;
 }
 
+/* Title */
 header h1 {
 margin: 6px 0 10px 0;
 font-size: 28px;
 }
 
-/* Navigation bar (now inside sticky header) */
+/* Navigation bar */
 nav {
 background: #003366; /* slightly darker blue strip */
 padding: 10px 0;
@@ -91,6 +95,15 @@ text-decoration: underline;
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
-header img { max-height: 80px; }
-nav a { margin: 0 8px; font-size: 15px; padding: 6px 10px; }
+header img {
+max-height: 80px; /* smaller logo on phones */
+}
+nav a {
+margin: 0 8px;
+font-size: 15px;
+padding: 6px 10px;
+}
+header h1 {
+font-size: 22px; /* slightly smaller title on phones */
+}
 }
