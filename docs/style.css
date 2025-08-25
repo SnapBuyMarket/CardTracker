@@ -8,36 +8,43 @@ color: #333;
 line-height: 1.6;
 }
 
-/* Header */
+/* Header (entire block stays at top) */
 header {
+position: sticky; /* keeps the whole header (logo + title + nav) visible */
+top: 0;
+z-index: 1000;
 text-align: center;
-padding: 20px;
 background: #004080; /* deep blue background */
 color: white;
+padding-top: 10px;
+padding-bottom: 0; /* nav has its own padding */
+box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* subtle depth when stuck */
 }
 
 header img {
 display: block;
-margin: 0 auto 10px auto;
+margin: 0 auto;
+max-height: 120px;
 }
 
 header h1 {
-margin: 0;
+margin: 6px 0 10px 0;
 font-size: 28px;
 }
 
-/* Navigation bar */
+/* Navigation bar (now inside sticky header) */
 nav {
-margin-top: 15px;
+background: #003366; /* slightly darker blue strip */
+padding: 10px 0;
 }
 
 nav a {
 color: white;
 text-decoration: none;
-margin: 0 12px;
+margin: 0 15px;
 font-weight: bold;
 font-size: 16px;
-padding: 6px 12px;
+padding: 8px 15px;
 border-radius: 4px;
 transition: background 0.3s;
 }
@@ -46,10 +53,10 @@ nav a:hover {
 background: rgba(255, 255, 255, 0.2);
 }
 
-/* Active link styling (looks like button) */
+/* Active link styling */
 nav a.active {
 background: #ffcc00; /* gold background */
-color: #004080; /* deep blue text */
+color: #003366; /* dark blue text */
 text-decoration: none;
 }
 
@@ -80,4 +87,10 @@ margin: 0 8px;
 
 footer a:hover {
 text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+header img { max-height: 80px; }
+nav a { margin: 0 8px; font-size: 15px; padding: 6px 10px; }
 }
