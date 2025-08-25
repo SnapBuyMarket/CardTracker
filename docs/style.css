@@ -1,49 +1,73 @@
 
-/* Global styles for CardTracker mini-site */
-body {
-font-family: Arial, sans-serif;
+/* Global Reset */
+* {
 margin: 0;
 padding: 0;
-background: #f5f5f5;
-color: #333;
-text-align: center;
+box-sizing: border-box;
 }
 
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f8f8f8;
+color: #333;
+line-height: 1.6;
+}
+
+/* Header */
 header {
-background: #222;
-color: #fff;
-padding: 15px;
+background: linear-gradient(90deg, #000000, #d4af37);
+color: white;
+padding: 1rem 2rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 header h1 {
-margin: 0;
-}
-
-nav {
-margin: 10px 0;
-}
-
-nav a {
-color: #fff;
-margin: 0 15px;
-text-decoration: none;
+font-size: 1.5rem;
 font-weight: bold;
 }
 
-nav a:hover {
+/* Logo */
+header img.logo {
+height: 50px;
+margin-right: 1rem;
+}
+
+/* Nav Bar */
+nav {
+display: flex;
+gap: 1.5rem;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
 text-decoration: underline;
+font-weight: bold;
 }
 
+/* Main content */
 main {
-padding: 20px;
+max-width: 800px;
+margin: 2rem auto;
+padding: 2rem;
+background: white;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+/* Footer */
 footer {
-background: #222;
-color: #fff;
-padding: 10px;
-position: fixed;
-width: 100%;
-bottom: 0;
-left: 0;
+margin-top: 2rem;
+text-align: center;
+padding: 1rem;
+background: #000;
+color: #d4af37;
+font-size: 0.9rem;
 }
