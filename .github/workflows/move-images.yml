@@ -1,7 +1,7 @@
 name: Move images into docs/images
 
 on:
-workflow_dispatch: # enables the "Run workflow" button
+workflow_dispatch: # ✅ this is what makes the Run workflow button appear
 push:
 paths:
 - 'docs/*.png'
@@ -10,33 +10,3 @@ paths:
 - 'docs/*.gif'
 - 'docs/*.svg'
 - 'docs/*.webp'
-
-jobs:
-move:
-runs-on: ubuntu-latest
-permissions:
-contents: write
-steps:
-- uses: actions/checkout@v4
-with:
-fetch-depth: 0
-
-- name: Move images (if any) and commit
-shell: bash
-run: |
-set -euo pipefail
-mkdir -p docs/images
-shopt -s nullglob nocaseglob
-files=(docs/*.{png,jpg,jpeg,gif,svg,webp})
-if [ ${#files[@]} -gt 0 ]; then
-for f in "${files[@]}"; do
-git mv "$f" docs/images/
-done
-git config user.name "github-actions[bot]"
-git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-git commit -m "chore: move images into docs/images"
-git push
-echo "Moved ${#files[@]} file(s)."
-else
-echo "No images to move. Exiting successfully."
-fi
