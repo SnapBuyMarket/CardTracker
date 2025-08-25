@@ -2,62 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CardTracker</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f8f9fa;
-color: #333;
-}
-header {
-background-color: #2c3e50;
-color: white;
-padding: 1rem;
-text-align: center;
-}
-nav a {
-margin: 0 1rem;
-text-decoration: none;
-color: #f8f9fa;
-}
-nav a:hover {
-text-decoration: underline;
-}
-main {
-padding: 2rem;
-max-width: 800px;
-margin: auto;
-}
-footer {
-background-color: #2c3e50;
-color: white;
-text-align: center;
-padding: 1rem;
-margin-top: 2rem;
-}
-</style>
+<title>Home - CardTracker</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-<h1>CardTracker</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="Privacy.html">Privacy Policy</a>
-<a href="Terms.html">Terms of Service</a>
-</nav>
+<img src="images/logo.png" alt="Site Logo" width="200">
+<h1>Welcome to CardTracker</h1>
 </header>
 
 <main>
-<h2>Welcome to CardTracker</h2>
-<p>If you see this, your GitHub Pages site is working.</p>
-<p>Use the links above to view our Privacy Policy and Terms of Service.</p>
+<p>This is the home page for CardTracker. Manage and track your cards easily.</p>
 </main>
 
 <footer>
-<p>&copy; 2025 CardTracker. All rights reserved.</p>
+<a href="Privacy.html">Privacy Policy</a> |
+<a href="Terms.html">Terms of Service</a> |
+<a href="Declined.html">Declined Notice</a>
 </footer>
 </body>
 </html>
