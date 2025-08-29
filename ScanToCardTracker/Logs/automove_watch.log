@@ -1,0 +1,79 @@
+[START] Thu 08/28/2025 12:41:44.53 Auto-moving from "C:\Users\cwall\OneDrive\aaaScanned Cards" to ""C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming"" 
+[START] Thu 08/28/2025 12:41:50.10 Auto-moving from "C:\Users\cwall\OneDrive\aaaScanned Cards" to ""C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming"" 
+[START] Thu 08/28/2025 12:41:50.39 Auto-moving from "C:\Users\cwall\OneDrive\aaaScanned Cards" to ""C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming"" 
+[Thu 08/28/2025 12:56:35.17] WARN: No 'aaaScanned Cards' folder found under C:\Users\cwall\OneDrive* 
+[Thu 08/28/2025 12:56:35.17] INFO: Sources discovered: 
+[Thu 08/28/2025 12:56:35.17] INFO: Sources discovered: 
+[START] Thu 08/28/2025 12:56:53.25 AutoMove v6.3 scanning OneDrive roots for 'aaaScanned Cards' 
+[Thu 08/28/2025 12:56:53.28] WARN: No 'aaaScanned Cards' folder found under C:\Users\cwall\OneDrive* 
+[START] Thu 08/28/2025 13:09:23.66 AutoMove v6.3 scanning OneDrive roots for 'aaaScanned Cards' 
+[Thu 08/28/2025 13:09:23.69] WARN: No 'aaaScanned Cards' folder found under C:\Users\cwall\OneDrive* 
+[START] Thu 08/28/2025 13:15:46.01 AutoMove v6.3 scanning OneDrive roots for 'aaaScanned Cards' 
+[Thu 08/28/2025 13:15:46.04] WARN: No 'aaaScanned Cards' folder found under C:\Users\cwall\OneDrive* 
+
+PROJECT_DIR = …
+
+SOURCE = …[AutoMove Thu 08/28/2025 15:52:56.30] Started (LOCKED) 
+Source: "C:\Users\cwall\OneDrive\AAAScanned Cards" 
+Dest:   "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming" 
+[AutoMove Thu 08/28/2025 16:05:24.87] Started (LOCKED) 
+Source: "C:\Users\cwall\OneDrive\AAAScanned Cards" 
+Dest:   "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming" 
+[AutoMove Thu 08/28/2025 22:59:06.79] Started (LOCKED) 
+Source: "C:\Users\cwall\OneDrive\AAAScanned Cards" 
+Dest:   "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming" 
+[AutoMove Thu 08/28/2025 23:47:47.91] Started (LOCKED) 
+Source: "C:\Users\cwall\OneDrive\AAAScanned Cards" 
+Dest:   "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming" 
+[AutoMove Thu 08/28/2025 23:48:23.34] Started (LOCKED) 
+Source: "C:\Users\cwall\OneDrive\AAAScanned Cards" 
+Dest:   "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming" 
+[AutoMove Thu 08/28/2025 23:48:24.94] Started (LOCKED) 
+Source: "C:\Users\cwall\OneDrive\AAAScanned Cards" 
+Dest:   "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming" 
+[Fri 08/29/2025  0:09:36.72] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:13:41.34] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:17:46.65] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:17:49.91] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:23:05.10] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:29:56.84] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:30:01.98] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:33:05.57] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:37:54.45] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:43:25.52] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:50:20.46] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  0:52:59.54] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  1:04:27.90] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  1:07:01.39] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  1:11:13.47] ===== AutoMove Watcher started =====
+[Fri 08/29/2025  1:18:54.21] ===== AutoMove started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Fri 08/29/2025  1:19:14.27] ===== AutoMove started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+        1 file(s) moved.
+[Fri 08/29/2025  1:24:42.99] MOVED: IMG_5539.JPG 
+        1 file(s) moved.
+[Fri 08/29/2025  1:25:08.33] MOVED: IMG_5538.JPG 
+        1 file(s) moved.
+[Fri 08/29/2025  1:28:28.02] MOVED: IMG_5538.JPG 
+        1 file(s) moved.
+[Fri 08/29/2025  1:28:28.02] MOVED: IMG_5539.JPG 
+[Fri 08/29/2025  9:35:27.90] ===== AutoMove started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker (HEIC) =====
+[Fri 08/29/2025  9:37:43.94] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:03:05.90] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:03:18.05] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:03:28.78] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:05:38.26] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:05:48.41] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:14:38.16] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:14:38.18] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:27:25.77] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:29:53.80] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:29:55.22] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 12:57:31.80] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 13:19:57.36] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 13:22:25.64] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 13:22:27.39] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 13:28:25.92] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 14:46:45.96] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 15:46:09.50] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 16:06:05.77] ===== AutoMove Watcher started =====
+[Fri 08/29/2025 16:09:55.78] ===== AutoMove Watcher started =====

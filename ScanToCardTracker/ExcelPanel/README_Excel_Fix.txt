@@ -1,0 +1,1 @@
+Import UF_CardTracker.frm and modCardTracker.bas. The form now uses a VBA-compatible header (no .frx required).

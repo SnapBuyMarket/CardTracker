@@ -1,0 +1,95 @@
+[START] Wed-08-27 13:02:25  ProjectDir="C:\Users\cwall\Desktop\Card Tracker\ScanToCardTracker" 
+[INFO] Creating venv... 
+[INFO] Using Tesseract at "C:\Users\cwall\AppData\Local\Programs\Tesseract-OCR\tesseract.exe" 
+[INFO] OCR Watcher starting... 
+[Wed 08/27/2025 14:40:38.12] ===== OCR Watcher started ===== 
+[INFO] OCR Watcher starting... 
+[Wed 08/27/2025 14:46:24.58] ===== OCR Watcher started ===== 
+[INFO] OCR Watcher starting... 
+[Wed 08/27/2025 14:49:26.28] ===== OCR Watcher started ===== 
+[INFO] OCR Watcher starting... 
+[Wed 08/27/2025 14:54:42.77] ===== OCR Watcher started ===== 
+[START] Thu 08/28/2025 12:41:44.34 Watching "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming" 
+[START] Thu 08/28/2025 12:41:49.92 Watching "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming" 
+[OCR Thu 08/28/2025 15:52:56.31] Started (HARDWIRED) 
+IN=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming 
+[OCR Thu 08/28/2025 15:52:56.31] Processing: test_watch_build.jpg 
+        1 file(s) moved.
+[ocr_basic] OCR failed for test_watch_build.jpg: cannot identify image file 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Processing\\test_watch_build.jpg'
+        1 file(s) moved.
+[OCR Thu 08/28/2025 16:05:24.89] Started (HARDWIRED) 
+IN=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming 
+[OCR Thu 08/28/2025 22:59:05.75] Started (HARDWIRED) 
+IN=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming 
+[OCR Thu 08/28/2025 22:59:06.63] Started (HARDWIRED) 
+IN=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming 
+[Thu 08/28/2025 23:23:52.79] ===== OCR Watcher started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Thu 08/28/2025 23:23:52.85] WARNING: Tesseract not found; writing filename/timestamp only.
+[Thu 08/28/2025 23:45:16.30] ===== OCR Watcher v7.3 started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Thu 08/28/2025 23:45:16.36] WARNING: Tesseract not found; writing filename only.
+[Thu 08/28/2025 23:45:19.81] ===== OCR Watcher v7.3 started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Thu 08/28/2025 23:45:19.87] WARNING: Tesseract not found; writing filename only.
+[Thu 08/28/2025 23:46:58.75] ===== OCR Watcher v7.3 started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Thu 08/28/2025 23:46:58.81] WARNING: Tesseract not found; writing filename only.
+[Thu 08/28/2025 23:47:47.92] ===== OCR Watcher v7.3 started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Thu 08/28/2025 23:47:47.98] WARNING: Tesseract not found; writing filename only.
+[Thu 08/28/2025 23:48:23.36] ===== OCR Watcher v7.3 started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Thu 08/28/2025 23:48:23.41] WARNING: Tesseract not found; writing filename only.
+[Thu 08/28/2025 23:48:24.95] ===== OCR Watcher v7.3 started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Thu 08/28/2025 23:48:25.01] WARNING: Tesseract not found; writing filename only.
+[OCR Thu 08/28/2025 23:58:04.49] Started (HARDWIRED) 
+[OCR Fri 08/29/2025  0:00:21.48] Started (HARDWIRED) 
+[KICK Fri 08/29/2025  0:00:26.07] Manual OCR kick started 
+[Fri 08/29/2025  0:09:36.74] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:09:36.81] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:13:41.37] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:13:41.43] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:17:46.66] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:17:46.74] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:17:49.75] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:17:49.81] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:23:05.12] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:23:05.18] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:29:56.85] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:29:56.91] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:30:02.00] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:30:02.06] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:33:06.21] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:33:06.27] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:37:55.15] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:37:55.21] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:43:26.19] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:43:26.25] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:50:21.14] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:50:21.20] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  0:52:59.36] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:52:59.44] WARNING: Tesseract not found; will record filename only.
+[LAUNCH OCR] Fri 08/29/2025  0:59:21.72 
+[Fri 08/29/2025  0:59:21.75] ===== OCR Watcher started =====
+[Fri 08/29/2025  0:59:21.81] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  1:04:27.73] ===== OCR Watcher started =====
+[Fri 08/29/2025  1:04:27.79] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  1:07:01.25] ===== OCR Watcher started =====
+[Fri 08/29/2025  1:07:01.32] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  1:11:14.22] ===== OCR Watcher started =====
+[Fri 08/29/2025  1:11:14.28] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025  1:18:54.22] ===== OCR Watcher started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Fri 08/29/2025  1:19:14.28] ===== OCR Watcher started in C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker =====
+[Fri 08/29/2025  1:24:46.07] OCR: IMG_5539.JPG 
+python: can't open file 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scripts\\ocr_process.py': [Errno 2] No such file or directory
+[Fri 08/29/2025  1:24:46.07] ERROR: IMG_5539.JPG 
+        1 file(s) moved.
+[Fri 08/29/2025  1:25:08.56] OCR: IMG_5538.JPG 
+python: can't open file 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scripts\\ocr_process.py': [Errno 2] No such file or directory
+[Fri 08/29/2025  1:25:08.56] ERROR: IMG_5538.JPG 
+        1 file(s) moved.
+[Fri 08/29/2025  1:28:28.76] OCR: IMG_5538.JPG 
+python: can't open file 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scripts\\ocr_process.py': [Errno 2] No such file or directory
+[Fri 08/29/2025  1:28:28.76] ERROR: IMG_5538.JPG 
+        1 file(s) moved.
+[Fri 08/29/2025  1:28:28.76] OCR: IMG_5539.JPG 
+python: can't open file 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scripts\\ocr_process.py': [Errno 2] No such file or directory
+[Fri 08/29/2025  1:28:28.76] ERROR: IMG_5539.JPG 
+        1 file(s) moved.
+[Fri 08/29/2025  9:37:45.30] ===== OCR Watcher started =====
+[Fri 08/29/2025  9:37:45.36] WARNING: Tesseract not found; will record filename only.

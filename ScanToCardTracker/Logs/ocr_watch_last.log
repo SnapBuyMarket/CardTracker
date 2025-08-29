@@ -1,0 +1,27 @@
+==================================================
+[Fri 08/29/2025  0:37:54.49] --- BEGIN DIAG ---
+SCRIPTS_DIR=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts
+PROJECT_DIR=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\..
+--- PATH CHECKS ---
+C:\Users\cwall\AppData\Local\Microsoft\WindowsApps\python.exe
+Python 3.13.7
+No venv at C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\..\.venv
+[Fri 08/29/2025  0:37:55.14] CALL ocr_watch.bat
+==================================================
+[Fri 08/29/2025  0:43:25.56] --- BEGIN DIAG ---
+SCRIPTS_DIR=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts
+PROJECT_DIR=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\..
+--- PATH CHECKS ---
+C:\Users\cwall\AppData\Local\Microsoft\WindowsApps\python.exe
+Python 3.13.7
+No venv at C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\..\.venv
+[Fri 08/29/2025  0:43:26.18] CALL ocr_watch.bat
+==================================================
+[Fri 08/29/2025  0:50:20.51] --- BEGIN DIAG ---
+SCRIPTS_DIR=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts
+PROJECT_DIR=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\..
+--- PATH CHECKS ---
+C:\Users\cwall\AppData\Local\Microsoft\WindowsApps\python.exe
+Python 3.13.7
+No venv at C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\..\.venv
+[Fri 08/29/2025  0:50:21.13] CALL ocr_watch.bat

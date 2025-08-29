@@ -1,0 +1,18 @@
+Open this file:
+
+C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Logs\automove_watch.log
+
+
+Look at the first line — it tells us which folder AutoMove is actually watching. If it says OneDrive, then that’s where your pictures went. If it says Desktop, then we’ll focus on the OCR side.
+
+If the log shows it grabbed your files, peek in:
+
+Logs\ocr_watch.log → do you see your filenames listed under OCR: and OK:?
+
+Output\ocr_results.csv → do new rows appear?
+
+If neither log shows activity, then we’ll hard-lock the scripts to your Desktop folder so nothing slips into OneDrive again.
+
+👉 When you’re rested, just bring me the top line from automove_watch.log and the last ~10 lines from ocr_watch.log. That’ll tell us instantly where your files went and why nothing showed in ocr_results.csv.
+
+Sleep well — I’ll be ready to pick up right where we left off.

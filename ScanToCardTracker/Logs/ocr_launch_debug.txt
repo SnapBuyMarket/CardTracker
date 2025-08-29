@@ -1,0 +1,6 @@
+Watching: C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming
+Output : C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Output\ocr_results.csv
+
+Press CTRL+C to stop.
+) was unexpected at this time.
+^C

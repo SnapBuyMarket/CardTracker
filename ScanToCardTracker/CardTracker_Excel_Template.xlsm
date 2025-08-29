@@ -1,0 +1,3 @@
+<Excel Template Content>
+# Make sure your macros refer to the OCR result output file here:
+Output\ocr_results.csv

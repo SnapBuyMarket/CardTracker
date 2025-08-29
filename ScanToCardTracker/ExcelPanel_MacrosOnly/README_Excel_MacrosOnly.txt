@@ -1,0 +1,1 @@
+Import modCardTracker.bas only (Alt+F11 → Import). Then run macros via Alt+F8: ImportOCRAndMap, OpenOutputFolder, RunDiagnostics.
