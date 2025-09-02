@@ -1,60 +1,82 @@
-name: CollX Inventory & Auction Scan
+download_collx.yml
+
+name: Download CollX Export
 
 on:
   workflow_dispatch:
-    inputs:
-      collx_csv:
-        description: "Path to CollX CSV (relative to repo root)"
-        required: false
-        default: "ScanToCardTracker/ExcelPanel/download_Chriswallace-2025-09-01-214652.csv"
+  schedule:
+    # Runs once a day at 6am UTC (1am CST)
+    - cron: "0 6 * * *"
 
 jobs:
-  build-run:
+  download-collx:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.x"
 
-      - name: Install deps (if any)
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install requests pandas
 
-      - name: Run scanner (tolerant if CSV missing)
-        run: |
-          CSV="${{ github.event.inputs.collx_csv }}"
-          if [ -z "$CSV" ]; then CSV="ScanToCardTracker/ExcelPanel/download_Chriswallace-2025-09-01-214652.csv"; fi
-          echo "Using CSV path: $CSV"
-          mkdir -p "ScanToCardTracker/Output"
+     name: Download CollX Export
 
-          if [ -f "$CSV" ]; then
-            echo "CSV found."
-            if [ -f "ScanToCardTracker/Scripts/auction_scan.py" ]; then
-              python "ScanToCardTracker/Scripts/auction_scan.py" --inventory "$CSV" --out "ScanToCardTracker/Output/results_${{ github.run_number }}.csv" || echo "Script error; creating placeholder."
-            else
-              echo "auction_scan.py not found; creating placeholder."
-            fi
-          else
-            echo "CSV not found at $CSV; creating placeholder so the job still succeeds."
-          fi
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs once a day at 6am UTC (1am CST)
+    - cron: "0 6 * * *"
 
-          # Always produce a results file so the run succeeds
-          if [ ! -f "ScanToCardTracker/Output/results_${{ github.run_number }}.csv" ]; then
-            echo "timestamp,notes" > "ScanToCardTracker/Output/results_${{ github.run_number }}.csv"
-            echo "$(date -u +%FT%TZ),placeholder run" >> "ScanToCardTracker/Output/results_${{ github.run_number }}.csv"
-          fi
+jobs:
+  download-collx:
+    runs-on: ubuntu-latest
 
-      - name: Upload artifact (results)
-        uses: actions/upload-artifact@v4
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          name: results-${{ github.run_number }}
-          path: "ScanToCardTracker/Output/"
+          python-version: "3.x"
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pandas
+
+      - name: Download CollX CSV
+        env:
+          COLLX_API_KEY: ${{ secrets.COLLX_API_KEY }}
+        run: |
+          echo "Downloading CollX export..."
+          python <<EOF
+          import requests, datetime, os
+          today = datetime.datetime.utcnow().strftime("%Y-%m-%d-%H%M%S")
+          url = "https://api.collx.app/v1/export"  # update if endpoint differs
+          headers = {"Authorization": f"Bearer {os.environ['COLLX_API_KEY']}"}
+          r = requests.get(url, headers=headers)
+          r.raise_for_status()
+          out_dir = "ScanToCardTracker/ExcelPanel"
+          os.makedirs(out_dir, exist_ok=True)
+          file_path = f"{out_dir}/download_Collx-{today}.csv"
+          with open(file_path, "wb") as f:
+              f.write(r.content)
+          print(f"Saved export to {file_path}")
+          EOF
+
+      - name: Commit and push CSV
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add ScanToCardTracker/ExcelPanel/download_Collx-*.csv
+          git commit -m "add latest CollX export"
+          git push
 
