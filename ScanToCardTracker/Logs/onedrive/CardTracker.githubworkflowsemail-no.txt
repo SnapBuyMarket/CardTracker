@@ -1,0 +1,41 @@
+name: Email Notification
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the "main" branch
+
+jobs:
+  send_email:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Send email
+      run: |
+        echo "Sending email..."
+        # Add your email sending logic here.
+        # For example, using SendGrid or Mailgun API to send an email.
+        # Replace the line below with actual code to send an email.
+        curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
+          -H "Authorization: Bearer ${{ secrets.SENDGRID_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d @- <<EOF
+        {
+          "personalizations": [
+            {
+              "to": [{"email": "your-email@example.com"}],
+              "subject": "New Commit to GitHub Repository"
+            }
+          ],
+          "from": {"email": "noreply@yourdomain.com"},
+          "content": [
+            {
+              "type": "text/plain",
+              "value": "A new commit has been pushed to your GitHub repository!"
+            }
+          ]
+        }
+        EOF
