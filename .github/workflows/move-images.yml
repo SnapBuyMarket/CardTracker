@@ -1,0 +1,12 @@
+name: Move images into docs/images
+
+on:
+workflow_dispatch: # ✅ this is what makes the Run workflow button appear
+push:
+paths:
+- 'docs/*.png'
+- 'docs/*.jpg'
+- 'docs/*.jpeg'
+- 'docs/*.gif'
+- 'docs/*.svg'
+- 'docs/*.webp'
