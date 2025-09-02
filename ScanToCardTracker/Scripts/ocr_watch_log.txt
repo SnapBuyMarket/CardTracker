@@ -1,0 +1,439 @@
+2025-08-30 14:46:38,597 [INFO] OCR Watcher started
+2025-08-30 14:46:38,598 [INFO] Watching for new images in Incoming ...
+2025-08-30 14:46:54,570 [INFO] OCR Watcher started
+2025-08-30 14:46:54,571 [INFO] Watching for new images in Incoming ...
+2025-08-30 14:47:10,873 [INFO] OCR Watcher started
+2025-08-30 14:47:10,874 [INFO] Watching for new images in Incoming ...
+2025-08-30 14:47:54,499 [INFO] OCR Watcher started
+2025-08-30 14:47:54,500 [INFO] Watching for new images in Incoming ...
+2025-08-30 15:07:07,168 [INFO] OCR Watcher started
+2025-08-30 15:07:07,169 [INFO] Watching for new images in Incoming ...
+2025-08-30 15:09:04,166 [INFO] OCR Watcher started
+2025-08-30 15:09:04,169 [INFO] Watching for new images in Incoming ...
+2025-08-30 15:30:38,695 [INFO] Found image: IMG_5547.JPG
+2025-08-30 15:30:38,698 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5547.JPG
+2025-08-30 15:30:38,784 [DEBUG] tag: MPFVersion (45056) - type: undefined (7) - value: b'0100'
+2025-08-30 15:30:38,784 [DEBUG] tag: NumberOfImages (45057) - type: long (4) - value: b'\x00\x00\x00\x02'
+2025-08-30 15:30:38,784 [DEBUG] tag: MPEntry (45058) - type: undefined (7) Tag Location: 46 - Data Location: 50 - value: b'\x00\x03\x00\x00\x00&\x13\xcf\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03O\x97\x00%\xe0f\x00\x00\x00\x00'
+2025-08-30 15:30:38,789 [ERROR] OCR failed for C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5547.JPG: Unsupported image format/type
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 62, in process_image
+    text = pytesseract.image_to_string(img)
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 341, in run_and_get_output
+    with save(image) as (temp_name, input_filename):
+         ~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 214, in save
+    image, extension = prepare(image)
+                       ~~~~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 195, in prepare
+    raise TypeError('Unsupported image format/type')
+TypeError: Unsupported image format/type
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 92, in main
+    text = process_image(proc_path)
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 67, in process_image
+    raise RuntimeError(str(e))
+RuntimeError: Unsupported image format/type
+2025-08-30 15:30:38,807 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Error\IMG_5547.JPG
+2025-08-30 15:30:38,807 [INFO] Found image: IMG_5548.JPG
+2025-08-30 15:30:38,808 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5548.JPG
+2025-08-30 15:30:38,808 [DEBUG] tag: MPFVersion (45056) - type: undefined (7) - value: b'0100'
+2025-08-30 15:30:38,808 [DEBUG] tag: NumberOfImages (45057) - type: long (4) - value: b'\x00\x00\x00\x02'
+2025-08-30 15:30:38,809 [DEBUG] tag: MPEntry (45058) - type: undefined (7) Tag Location: 46 - Data Location: 50 - value: b'\x00\x03\x00\x00\x00&\xb1\xc3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\xf0\xb9\x00&\x80\x7f\x00\x00\x00\x00'
+2025-08-30 15:30:38,810 [ERROR] OCR failed for C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5548.JPG: Unsupported image format/type
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 62, in process_image
+    text = pytesseract.image_to_string(img)
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 341, in run_and_get_output
+    with save(image) as (temp_name, input_filename):
+         ~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 214, in save
+    image, extension = prepare(image)
+                       ~~~~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 195, in prepare
+    raise TypeError('Unsupported image format/type')
+TypeError: Unsupported image format/type
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 92, in main
+    text = process_image(proc_path)
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 67, in process_image
+    raise RuntimeError(str(e))
+RuntimeError: Unsupported image format/type
+2025-08-30 15:30:38,812 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Error\IMG_5548.JPG
+2025-08-30 20:32:46,430 [INFO] OCR Watcher started
+2025-08-30 20:32:46,432 [INFO] Watching for new images in Incoming ...
+2025-08-30 20:32:46,433 [INFO] Found image: IMG_5538 2.JPG
+2025-08-30 20:32:46,435 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5538 2.JPG
+2025-08-30 20:32:46,469 [DEBUG] tag: MPFVersion (45056) - type: undefined (7) - value: b'0100'
+2025-08-30 20:32:46,469 [DEBUG] tag: NumberOfImages (45057) - type: long (4) - value: b'\x00\x00\x00\x02'
+2025-08-30 20:32:46,470 [DEBUG] tag: MPEntry (45058) - type: undefined (7) Tag Location: 46 - Data Location: 50 - value: b'\x00\x03\x00\x00\x00)\xddI\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05y\x03\x00)\xab\x92\x00\x00\x00\x00'
+2025-08-30 20:32:46,472 [ERROR] OCR failed for C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5538 2.JPG: Unsupported image format/type
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 62, in process_image
+    text = pytesseract.image_to_string(img)
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 341, in run_and_get_output
+    with save(image) as (temp_name, input_filename):
+         ~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 214, in save
+    image, extension = prepare(image)
+                       ~~~~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 195, in prepare
+    raise TypeError('Unsupported image format/type')
+TypeError: Unsupported image format/type
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 92, in main
+    text = process_image(proc_path)
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 67, in process_image
+    raise RuntimeError(str(e))
+RuntimeError: Unsupported image format/type
+2025-08-30 20:32:46,484 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Error\IMG_5538 2.JPG
+2025-08-30 21:23:00,738 [INFO] OCR Watcher started
+2025-08-30 21:23:00,740 [INFO] Watching for new images in Incoming ...
+2025-08-30 21:31:04,948 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:31:06,957 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:31:08,960 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:31:10,961 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:31:12,964 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:31:14,967 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:31:16,968 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:31:18,968 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:31:20,969 [ERROR] Watcher loop error: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-30 21:33:51,015 [INFO] Found image: IMG_5538 2.JPG
+2025-08-30 21:33:51,019 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5538 2.JPG
+2025-08-30 21:33:51,056 [DEBUG] tag: MPFVersion (45056) - type: undefined (7) - value: b'0100'
+2025-08-30 21:33:51,056 [DEBUG] tag: NumberOfImages (45057) - type: long (4) - value: b'\x00\x00\x00\x02'
+2025-08-30 21:33:51,056 [DEBUG] tag: MPEntry (45058) - type: undefined (7) Tag Location: 46 - Data Location: 50 - value: b'\x00\x03\x00\x00\x00)\xddI\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05y\x03\x00)\xab\x92\x00\x00\x00\x00'
+2025-08-30 21:33:51,059 [ERROR] OCR failed for C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5538 2.JPG: Unsupported image format/type
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 62, in process_image
+    text = pytesseract.image_to_string(img)
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 341, in run_and_get_output
+    with save(image) as (temp_name, input_filename):
+         ~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 214, in save
+    image, extension = prepare(image)
+                       ~~~~~~~^^^^^^^
+  File "C:\Users\cwall\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytesseract\pytesseract.py", line 195, in prepare
+    raise TypeError('Unsupported image format/type')
+TypeError: Unsupported image format/type
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 92, in main
+    text = process_image(proc_path)
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 67, in process_image
+    raise RuntimeError(str(e))
+RuntimeError: Unsupported image format/type
+2025-08-30 21:33:51,071 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Error\IMG_5538 2.JPG
+2025-08-30 21:57:55,577 [INFO] Found image: IMG_5563.PNG
+2025-08-30 21:57:55,581 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\IMG_5563.PNG
+2025-08-30 21:57:55,581 [DEBUG] STREAM b'IHDR' 16 13
+2025-08-30 21:57:55,582 [DEBUG] STREAM b'sRGB' 41 1
+2025-08-30 21:57:55,582 [DEBUG] STREAM b'eXIf' 54 142
+2025-08-30 21:57:55,582 [DEBUG] STREAM b'iTXt' 208 495
+2025-08-30 21:57:55,583 [DEBUG] STREAM b'IDAT' 715 16384
+2025-08-30 21:57:55,853 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\cwall\\AppData\\Local\\Temp\\tess_ns4dyam7_input.PNG', 'C:\\Users\\cwall\\AppData\\Local\\Temp\\tess_ns4dyam7', 'txt']
+2025-08-30 21:57:56,332 [INFO] Moved to C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processed\IMG_5563.PNG
+2025-08-30 22:16:44,792 [INFO] OCR Watcher started
+2025-08-30 22:16:44,794 [INFO] Watching for new images in Incoming ...
+2025-08-30 22:25:41,592 [INFO] OCR Watcher started
+2025-08-30 22:25:41,594 [INFO] Watching for new images in Incoming ...
+2025-08-30 22:40:26,801 [INFO] OCR Watcher started
+2025-08-30 22:40:26,803 [INFO] Watching for new images in Incoming ...
+2025-08-30 22:42:21,325 [INFO] OCR Watcher started
+2025-08-30 22:42:21,327 [INFO] Watching for new images in Incoming ...
+2025-08-30 22:45:58,589 [INFO] OCR Watcher started
+2025-08-30 22:45:58,590 [INFO] Watching for new images in Incoming ...
+2025-08-30 22:59:03,700 [INFO] OCR Watcher started
+2025-08-30 22:59:03,702 [INFO] Watching for new images in Incoming ...
+2025-08-30 23:15:43,232 [INFO] OCR Watcher started
+2025-08-30 23:15:43,234 [INFO] Watching for new images in Incoming ...
+2025-08-30 23:18:43,063 [INFO] OCR Watcher started
+2025-08-30 23:18:43,065 [INFO] Watching for new images in Incoming ...
+2025-08-30 23:22:49,182 [INFO] OCR Watcher started
+2025-08-30 23:22:49,185 [INFO] Watching for new images in Incoming ...
+2025-08-30 23:31:30,038 [INFO] OCR Watcher started
+2025-08-30 23:31:30,040 [INFO] Watching for new images in Incoming ...
+2025-08-30 23:39:57,629 [INFO] OCR Watcher started
+2025-08-30 23:39:57,631 [INFO] Watching for new images in Incoming ...
+2025-08-31 04:33:20,184 [INFO] OCR Watcher started
+2025-08-31 04:33:20,186 [INFO] Watching for new images in Incoming ...
+2025-08-31 14:42:10,568 [INFO] OCR Watcher started
+2025-08-31 14:42:10,570 [INFO] Watching for new images in Incoming ...
+2025-08-31 14:50:12,935 [INFO] OCR Watcher started
+2025-08-31 14:50:12,938 [INFO] Watching for new images in Incoming ...
+2025-08-31 15:27:57,636 [INFO] OCR Watcher started
+2025-08-31 15:27:57,639 [INFO] Watching for new images in Incoming ...
+2025-08-31 15:54:55,186 [INFO] OCR Watcher started
+2025-08-31 15:54:55,188 [INFO] Watching for new images in Incoming ...
+2025-08-31 16:29:11,940 [INFO] OCR Watcher started
+2025-08-31 16:29:11,942 [INFO] Watching for new images in Incoming ...
+2025-08-31 17:42:36,840 [INFO] OCR Watcher started
+2025-08-31 17:42:36,842 [INFO] Watching for new images in Incoming ...
+2025-08-31 18:21:38,505 [INFO] OCR Watcher started
+2025-08-31 18:21:38,507 [INFO] Watching for new images in Incoming ...
+2025-08-31 20:09:22,148 [INFO] OCR Watcher started
+2025-08-31 20:09:22,150 [INFO] Watching for new images in Incoming ...
+2025-08-31 20:36:21,683 [INFO] OCR Watcher started
+2025-08-31 20:36:21,685 [INFO] Watching for new images in Incoming ...
+2025-08-31 21:06:49,693 [INFO] OCR Watcher started
+2025-08-31 21:06:49,697 [INFO] Watching for new images in Incoming ...
+2025-08-31 21:19:13,937 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:15,958 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:17,961 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:19,962 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:21,962 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:23,964 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:25,965 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:27,968 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:29,969 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:31,970 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:33,971 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:35,973 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:37,976 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:39,979 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:41,980 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:43,981 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:45,982 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:47,983 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:49,985 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:51,986 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:53,989 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:19:55,990 [ERROR] Watcher loop error: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+Traceback (most recent call last):
+  File "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py", line 77, in main
+    for name in os.listdir(incoming_dir):
+                ~~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTracker\\Scans\\Incoming'
+2025-08-31 21:37:16,375 [INFO] OCR Watcher started
+2025-08-31 21:37:16,377 [INFO] Watching for new images in Incoming ...
+2025-08-31 21:47:43,655 [INFO] OCR Watcher started
+2025-08-31 21:47:43,659 [INFO] Watching for new images in Incoming ...
+2025-08-31 22:29:33,520 [INFO] OCR Watcher started
+2025-08-31 22:29:33,522 [INFO] Watching for new images in Incoming ...
+2025-08-31 23:30:20,330 [INFO] OCR Watcher started
+2025-08-31 23:30:20,332 [INFO] Watching for new images in Incoming ...
+2025-09-01 07:17:08,503 [INFO] OCR Watcher started
+2025-09-01 07:17:08,506 [INFO] Watching for new images in Incoming ...
+2025-09-01 07:44:30,539 [INFO] OCR Watcher started
+2025-09-01 07:44:30,542 [INFO] Watching for new images in Incoming ...
+2025-09-01 07:50:53,586 [INFO] OCR Watcher started
+2025-09-01 07:50:53,588 [INFO] Watching for new images in Incoming ...
+2025-09-01 11:14:07,402 [INFO] OCR Watcher started
+2025-09-01 11:14:07,405 [INFO] Watching for new images in Incoming ...
+2025-09-01 12:55:30,276 [INFO] OCR Watcher started
+2025-09-01 12:55:30,278 [INFO] Watching for new images in Incoming ...
+2025-09-01 18:01:20,653 [INFO] OCR Watcher started
+2025-09-01 18:01:20,655 [INFO] Watching for new images in Incoming ...

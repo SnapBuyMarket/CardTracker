@@ -1,0 +1,112 @@
+If the batch script is only "blipping" and not doing anything, it's possible that the script is running too quickly, or there might be an issue preventing it from executing fully. Let’s troubleshoot and check a few things to ensure it runs as expected.
+
+Steps to Troubleshoot and Run the Batch Script:
+1. Run the Batch Script via Command Prompt (for more visibility):
+
+Instead of double-clicking the batch script, you can run it manually through Command Prompt to see if any errors are displayed.
+
+Open Command Prompt as Administrator:
+
+Press Windows + R, type cmd, and then press Ctrl + Shift + Enter to run it as Administrator.
+
+Navigate to the Folder Where the Script is Located:
+
+In Command Prompt, use the cd command to navigate to the folder where the updated_process_and_move.bat file is saved.
+
+If it's on your Desktop, type:
+
+cd C:\Users\cwall\Desktop
+
+
+Run the Batch Script:
+
+Once you're in the correct folder, type the following command:
+
+updated_process_and_move.bat
+
+
+Check for Errors:
+
+If there’s an issue, Command Prompt should display it.
+
+Let me know if you see any error messages or if the script runs successfully.
+
+2. Check for Hidden Files or File Permissions:
+
+If the script still doesn't do anything, it might be related to file permissions or hidden output files:
+
+Check the Task Manager to see if any processes related to Tesseract are running.
+
+If necessary, check the Processing and Processed folders for any activity (e.g., new text files or moved images).
+
+3. Log Output for Debugging:
+
+To help with troubleshooting, we can modify the batch script to log what it's doing:
+
+Here’s an updated script that writes the process steps to a log file:
+
+@echo off
+echo Start Processing > C:\Users\cwall\Desktop\process_log.txt
+for %%f in (C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\*.jpg) do (
+    echo Processing %%f >> C:\Users\cwall\Desktop\process_log.txt
+    tesseract "%%f" "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Output\output_%%~nf.txt" >> C:\Users\cwall\Desktop\process_log.txt 2>&1
+    move "%%f" "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processed\" >> C:\Users\cwall\Desktop\process_log.txt 2>&1
+)
+echo Process Complete >> C:\Users\cwall\Desktop\process_log.txt
+
+
+This script will create a process_log.txt file on your Desktop that will show step-by-step activity, including any errors.
+
+Update the Batch Script with the above code and save it.
+
+Run it again using Command Prompt as described above.
+
+Check process_log.txt for any logged messages or errors.
+
+Let me know if any errors appear or if you're still facing issues!
+
+You said:
+Open Command Prompt as Administrator:
+
+Press Windows + R, type cmd, and then press Ctrl + Shift + Enter to run it as Administrator.
+
+Navigate to the Folder Where the Script is Located:
+
+In Command Prompt, use the cd command to navigate to the folder where the updated_process_and_move.bat file is saved.
+
+If it's on your Desktop, type:
+
+cd C:\Users\cwall\Desktop
+
+
+Run the Batch Script:
+
+Once you're in the correct folder, type the following command:
+
+updated_process_and_move.bat
+
+
+Check for Errors:
+
+If there’s an issue, Command Prompt should display it.
+
+Let me know if you see any error messages or if the script runs successfully.
+
+2. Check for Hidden Files or File Permissions:
+
+If the script still doesn't do anything, it might be related to file permissions or hidden output files:
+
+Check the Task Manager to see if any processes related to Tesseract are running.
+
+If necessary, check the Processing and Processed folders for any activity (e.g., new text files or moved images).
+
+3. Log Output for Debugging:
+
+To help with troubleshooting, we can modify the batch script to log what it's doing:
+
+Here’s an updated script that writes the process steps to a log file:; will come back to this. going to eat supper:  10:17 pm cst.  lol
+ChatGPT said:
+
+No problem! Enjoy your supper, and feel free to reach out whenever you're ready to continue. I'll be here to help if you need anything further when you return. 😊
+
+Take your time!

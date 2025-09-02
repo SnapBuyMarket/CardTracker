@@ -1,0 +1,41 @@
+Sub ImportOCRData()
+    Dim ws As Worksheet
+    Dim filePath As String
+
+    ' Set the path for the OCR results CSV file
+    filePath = "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Output\ocr_results.csv"
+
+    ' Set the worksheet where the data should be loaded (e.g., "Cards")
+    Set ws = ThisWorkbook.Sheets("Cards") ' Modify this to match your sheet name
+
+    ' Clear the existing data before importing new data
+    ws.Cells.Clear
+
+    ' Import the CSV data into the worksheet starting at cell A1
+    With ws.QueryTables.Add(Connection:="TEXT;" & filePath, Destination:=ws.Range("A1"))
+        .TextFileParseType = xlDelimited
+        .TextFileCommaDelimiter = True
+        .Refresh BackgroundQuery:=False
+    End With
+End Sub
+
+Sub MoveProcessedFiles()
+    Dim FileName As String
+    Dim SourceFolder As String
+    Dim DestFolder As String
+    Dim fso As Object
+
+    ' Set the source and destination folders
+    SourceFolder = "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processing\"
+    DestFolder = "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Processed\"
+
+    ' Create the FileSystemObject
+    Set fso = CreateObject("Scripting.FileSystemObject")
+
+    ' Loop through files in the source folder and move them to the destination folder
+    FileName = Dir(SourceFolder & "*.jpg") ' Loop through JPG files
+    Do While FileName <> ""
+        fso.MoveFile SourceFolder & FileName, DestFolder & FileName
+        FileName = Dir ' Get next file
+    Loop
+End Sub

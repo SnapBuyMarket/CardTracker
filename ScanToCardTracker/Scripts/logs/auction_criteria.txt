@@ -1,0 +1,55 @@
+
+Auction Criteria for Sports Card Search (Ending in Next 1 Hour, Shipped Price under $25):
+-----------------------------------------------------------------------------------
+
+1. Time Filter:
+   - Ending in the next 1 hour: Only auctions that are set to close in the next hour.
+
+2. Price Filter:
+   - Total shipped price under $25: The total amount for the card, including both the auction bid price and the shipping cost, must be below $25.
+
+3. Sport Categories:
+   - Only sports cards from the following categories are considered:
+     - NBA (Basketball)
+     - NFL (Football)
+     - MLB (Baseball)
+     - WNBA (Women's Basketball)
+     - Soccer
+     - Hockey
+     - Golf
+
+4. Card Features Filter:
+   - Preferred Features:
+     - Rookie cards: Cards featuring a player in their first year or first appearance in a major sports league.
+     - Autographs (Autos): Cards that feature a player's authentic signature.
+     - Serial-numbered cards: Cards that are part of a limited print run (e.g., out of 50, out of 100).
+     - Patch cards: Cards that include a piece of the player's jersey or other memorabilia.
+   - Exclusions:
+     - Junk-wax commons: Standard base cards from the 1980s to 1990s that are often considered overly mass-produced and low in value.
+
+5. Platform:
+   - The search is conducted across the following platforms:
+     - eBay: The primary marketplace for live auctions, including a large number of sports card listings.
+     - COMC: Although primarily known for fixed-price listings, COMC also has auction-style listings on eBay.
+     - Other relevant marketplaces: Platforms that host sports card auctions but weren't specified in detail.
+
+6. Auction Criteria:
+   - Active Auctions Only: Only auctions, not fixed-price listings or Buy It Now (BIN) offers, are considered.
+   - Imminent Auctions: Auctions must be closing soon (within the next hour) to match the "urgent" nature of the request.
+
+Expected Output:
+-----------------------------------------------------------------------------------
+The output of the search will be:
+- A compact list of qualifying auctions with:
+  - Card Name: The name/description of the card.
+  - Sport: The sport of the card.
+  - Platform: The marketplace where the auction is hosted (e.g., eBay, COMC).
+  - Link: A direct link to the auction.
+  - Ends In (hrs): Time remaining until the auction ends.
+  - Current Bid: The current bid price at the time of search.
+  - Shipping $: Shipping cost for the auction.
+  - Shipped Price (Est): Estimated total cost (current bid + shipping).
+  - Seller: The seller's username or store name.
+  - Watchers/Bids: The number of watchers or bids the auction has.
+  - Notes: Any additional relevant information (e.g., card condition, special features).
+  - Flag (<6h): A flag indicating if the auction ends in less than 6 hours (a relevant detail to ensure quick decision-making).

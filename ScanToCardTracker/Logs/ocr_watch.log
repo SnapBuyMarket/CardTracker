@@ -138,3 +138,21 @@ python: can't open file 'C:\\Users\\cwall\\Desktop\\CardTracker\\ScanToCardTrack
 [Fri 08/29/2025 16:06:05.84] WARNING: Tesseract not found; will record filename only.
 [Fri 08/29/2025 16:09:55.80] ===== OCR Watcher started =====
 [Fri 08/29/2025 16:09:55.85] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025 18:17:19.20] ===== OCR Watcher started =====
+[Fri 08/29/2025 18:17:19.26] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025 18:17:30.99] ===== OCR Watcher started =====
+[Fri 08/29/2025 18:17:31.04] WARNING: Tesseract not found; will record filename only.
+[Fri 08/29/2025 18:17:36.89] ===== OCR Watcher started =====
+[Fri 08/29/2025 18:17:36.95] WARNING: Tesseract not found; will record filename only.
+2025-08-30 14:05:23,536 [INFO] OCR Watcher started. Watching: C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming
+2025-08-30 14:05:23,537 [INFO] Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-08-30 14:06:23,574 [INFO] OCR Watcher started. Watching: C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming
+2025-08-30 14:06:23,575 [INFO] Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-08-30 14:07:20,414 [INFO] OCR Watcher started. Watching: C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming
+2025-08-30 14:07:20,415 [INFO] Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-08-30 14:09:29,668 [INFO] OCR Watcher started. Watching: C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming
+2025-08-30 14:09:29,669 [INFO] Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-08-30 14:15:15,122 [INFO] OCR Watcher started. Watching: C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming
+2025-08-30 14:15:15,123 [INFO] Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-08-30 14:29:18,964 [INFO] OCR Watcher started. Watching: C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming
+2025-08-30 14:29:18,965 [INFO] Using Tesseract at: C:\Program Files\Tesseract-OCR\tesseract.exe

@@ -1,0 +1,1 @@
+2025-08-30 14:51:19,337 - INFO - OCR Watcher started. Monitoring: C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans\Incoming

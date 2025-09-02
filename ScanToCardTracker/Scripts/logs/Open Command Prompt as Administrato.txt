@@ -1,0 +1,35 @@
+Open Command Prompt as Administrator:
+
+If you're not already in an elevated Command Prompt, press Shift + F10 after booting into Safe Mode to open a Command Prompt window.
+
+Navigate to the Scans folder:
+
+Use the following command to navigate to the folder where you’re facing the issue:
+
+cd C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans
+
+
+Remove Read-Only Attribute:
+
+Use this command to remove the read-only attribute from all files in the Scans folder:
+
+attrib -r /s /d
+
+
+Check Folder Permissions:
+
+If the above command doesn't solve the issue, we can try resetting permissions with this command:
+
+icacls "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans" /reset /T
+
+
+Verify Permissions:
+
+Ensure the cwall user has full control over the folder by running:
+
+icacls "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scans" /grant cwall:F /T
+
+
+Once you've done that, try accessing the Scans folder again, and the read-only issue should be resolved.
+
+Let me know if you encounter any issues during these steps!

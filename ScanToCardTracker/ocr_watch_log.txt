@@ -1,0 +1,6 @@
+DEBUG:root:OCR Watcher started
+DEBUG:root:OCR Watcher started
+DEBUG:root:OCR Watcher started
+DEBUG:root:OCR Watcher started
+DEBUG:root:OCR Watcher started
+DEBUG:root:OCR Watcher started

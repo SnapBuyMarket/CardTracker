@@ -1,21 +1,12 @@
 @echo off
 setlocal ENABLEDELAYEDEXPANSION
+title Start All Services (Fresh Install)
 
-REM --- Detect PROJECT_DIR (OneDrive Desktop preferred) ---
-set "PD1=C:\Users\cwall\OneDrive\Desktop\CardTracker\ScanToCardTracker"
-set "PD2=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker"
+rem --- Start AutoMove ---
+start "CardTracker - AutoMove" cmd /c "C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\auto_move.bat"
 
-if exist "C:\Users\cwall\OneDrive\Desktop" (
-    set "PROJECT_DIR=%PD1%"
-) else (
-    set "PROJECT_DIR=%PD2%"
-)
-
-
-echo [start_all] PROJECT_DIR=%PROJECT_DIR%
-
-REM Start the AutoMove and OCR watchers in separate windows (minimized).
-start "CardTracker — AutoMove Watcher" /min cmd /c ""%PROJECT_DIR%\Scripts\automove_watch.bat""
-start "CardTracker — OCR Watcher" /min cmd /c ""%PROJECT_DIR%\Scripts\ocr_watch.bat""
+rem --- Start OCR Watcher with Maximized Window ---
+start "CardTracker - OCR Watcher" cmd /c "echo Running OCR Watcher... && start /max python C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker\Scripts\ocr_watch.py"
 
 exit /b 0
+

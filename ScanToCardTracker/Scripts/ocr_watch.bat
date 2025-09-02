@@ -1,21 +1,18 @@
 @echo off
-:: Set the project directory
-set PROJECT_DIR=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker
+setlocal
 
-:: Set the path to the correct Python executable (from python.org)
-set PY="C:\Users\cwall\AppData\Local\Programs\Python\Python313\python.exe"
+REM --- Adjust if your Python path differs ---
+set "PY=C:\Users\cwall\AppData\Local\Programs\Python\Python313\python.exe"
 
-:: Navigate to the project directory
-pushd "%PROJECT_DIR%"
+REM --- Project paths ---
+set "PROJECT_DIR=C:\Users\cwall\Desktop\CardTracker\ScanToCardTracker"
+set "SCRIPTS=%PROJECT_DIR%\Scripts"
 
-:: Run the OCR script with the correct Python
-"%PY%" "%PROJECT_DIR%\Scripts\ocr_watch.py"
-
-:: Store the error level
+echo Starting OCR Watcher...
+pushd "%SCRIPTS%"
+"%PY%" "%SCRIPTS%\ocr_watch.py"
 set "RC=%ERRORLEVEL%"
-
-:: Return to the original directory
 popd
 
-:: Exit with the error code
-exit /b %RC%
+echo OCR Watcher exited with code %RC%
+pause
